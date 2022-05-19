@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+    <!-- Header -->
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView92"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imageUserNav"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/user" />
+
+        </TableRow>
+
+    </TableLayout>
+    <!-- Menu - Divider -->
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/btnMenuDashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border_bottom_blue"
+                android:text="@string/dashboard"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:paddingBottom="5dp"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/btnMenuReportes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reportes"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+    </TableLayout>
+    <!-- Form -->
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout3"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TableLayout>
+            <TableRow>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:text="@string/sistolica"/>
+            </TableRow>
+            <TableRow>
+                <EditText
+                    android:id="@+id/inputSistolica"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_input"
+                    android:ems="19"
+                    android:inputType="number"
+                    android:paddingStart="@dimen/paddingStartEditText10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout>
+            <TableRow>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:text="@string/diastolica"/>
+            </TableRow>
+            <TableRow>
+                <EditText
+                    android:id="@+id/inputDiastolica"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_input"
+                    android:ems="19"
+                    android:inputType="number"
+                    android:paddingStart="@dimen/paddingStartEditText10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout>
+            <TableRow>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:text="@string/pulso"/>
+            </TableRow>
+            <TableRow>
+                <EditText
+                    android:id="@+id/inputPulso"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_input"
+                    android:ems="19"
+                    android:inputType="number"
+                    android:paddingStart="@dimen/paddingStartEditText10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout>
+            <TableRow>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:text="@string/nota"/>
+            </TableRow>
+            <TableRow>
+                <EditText
+                    android:id="@+id/inputNota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:background="@drawable/custom_input"
+                    android:ems="15"
+                    android:lines="8"
+                    android:minLines="6"
+                    android:gravity="top|start"
+                    android:textColor="@color/black"
+                    android:inputType="textMultiLine"
+                    android:scrollbars="vertical"
+                    tools:layout_editor_absoluteX="67dp"
+                    tools:layout_editor_absoluteY="454dp"
+                    tools:ignore="RtlSymmetry" />
+            </TableRow>
+        </TableLayout>
+
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_buttons"
+                android:text="@string/guardar"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password_login"
+                tools:ignore="MissingConstraints" />
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1080194955396",
+    "project_id": "apphealth-fca01",
+    "storage_bucket": "apphealth-fca01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080194955396:android:59d50966e6149405e1aad1",
+        "android_client_info": {
+          "package_name": "com.startechnology.apphealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080194955396-gv3f8u901ph9orh9951bltqn9p2m34jc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDylXGBtUq1ptP4Mp6rGGk4E4yfv7lZVL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1080194955396-gv3f8u901ph9orh9951bltqn9p2m34jc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
